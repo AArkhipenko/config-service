@@ -1,0 +1,10 @@
+KeycloakSettings:
+    ValidAudiences:
+        - 'medication-control-service-client'
+    ServiceSettings:
+        Service: 'medication-control-service-client'
+        Roles:
+            - Key: 'AdminRole'
+              Value: 'medication-control-service-admin'
+            - Key: 'UserRole'
+              Value: 'medication-control-service-user'

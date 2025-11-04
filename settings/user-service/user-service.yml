@@ -1,0 +1,10 @@
+KeycloakSettings:
+    ValidAudiences:
+        - 'user-service-client'
+    ServiceSettings:
+        Service: 'user-service-client'
+        Roles:
+            - Key: 'AdminRole'
+              Value: 'user-service-admin'
+            - Key: 'UserRole'
+              Value: 'user-service-user'
