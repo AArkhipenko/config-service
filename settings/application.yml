@@ -2,14 +2,14 @@ DatabaseSettings:
     CommandTimeout: 30000
 
 ConnectionStrings:
-    ControlDb: 'Host=${{UserDb.Host}};Port=${{UserDb.Port}};Database=control_db;Username=${{UserDb.User}};Password=${{UserDb.Password}}'
-    UserDb: 'Host=${{UserDb.Host}};Port=${{UserDb.Port}};Database=user_db;Username=${{UserDb.User}};Password=${{UserDb.Password}}'
+    ControlDb: 'Host=${ControlDb.Host};Port=${ControlDb.Port};Database=control_db;Username=${ControlDb.User};Password=${ControlDb.Password}'
+    UserDb: 'Host=${UserDb.Host};Port=${UserDb.Port};Database=user_db;Username=${UserDb.User};Password=${UserDb.Password}'
 
 KeycloakSettings:
-    Authority: '${{Keycloak.Host}}/realms/aid-kit-realm'
-    MetadataAddress: '${{Keycloak.Host}}/realms/aid-kit-realm/.well-known/openid-configuration'
+    Authority: '${Keycloak.Host}/realms/aid-kit-realm'
+    MetadataAddress: '${Keycloak.Host}/realms/aid-kit-realm/.well-known/openid-configuration'
     IsRequireHttpsMetadata: false
     IsValidateIssuer: true
     ValidIssuers:
-        - '${{Keycloak.Host}}/realms/aid-kit-realm'
+        - '${Keycloak.Host}/realms/aid-kit-realm'
     IsValidateAudience: true
