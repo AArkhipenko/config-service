@@ -9,7 +9,7 @@ KeycloakSettings:
     Authority: '${Keycloak.Host}/realms/aid-kit-realm'
     MetadataAddress: '${Keycloak.Host}/realms/aid-kit-realm/.well-known/openid-configuration'
     IsRequireHttpsMetadata: false
-    IsValidateIssuer: true
+    IsValidateIssuer: false
     ValidIssuers:
         - '${Keycloak.Host}/realms/aid-kit-realm'
     IsValidateAudience: true

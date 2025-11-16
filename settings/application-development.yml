@@ -1,14 +1,14 @@
 UserDb:
-    Host: 'server.arkhipenko.lan'
-    Port: 60002
+    Host: 'pguser-db'
+    Port: 5432
     User: '{cipher}815c34fd9ac713c3822e34cecaa854ceb38e56954a4ece235e43bfd912734fb7'
     Password: '{cipher}0c75a11e769e31af150671fa6dff88ebd4dc6fa60ca9862150036d4b6622ebd1a457d84d1b22d0858d3a6f1695d5be78'
 
 ControlDb:
-    Host: 'server.arkhipenko.lan'
-    Port: 60003
+    Host: 'pgcontrol-db'
+    Port: 5432
     User: '{cipher}8fd47a1c877d7d236f782d1fdf5087576e0ccb2da451492de129591b82367a84'
     Password: '{cipher}680cef5039d891e1049b0b991d7957158a54e4739b941883d1cc487b7915355a381cc9f63a224180e7cce62847ce86d2'
 
 Keycloak:
-    Host: 'http://server.arkhipenko.lan/keycloak'
+    Host: 'http://keycloak:8080'
